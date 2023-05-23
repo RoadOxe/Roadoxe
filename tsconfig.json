@@ -67,6 +67,6 @@
     "resolveJsonModule": true,/* Include modules imported with '.json' extension */
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "types": ["reflect-metadata"]
+    "types": ["reflect-metadata", "jest"]
   }
 }
