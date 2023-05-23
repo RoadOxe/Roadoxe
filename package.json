@@ -10,12 +10,11 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "command -v pnpm || (echo 'pnpm is required to install dependencies.' && exit 1)",
     "start:dev": "nodemon",
     "start": "npm run build && node build/index.js",
     "build": "rimraf ./build && tsc",
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "ts-node": "ts-node"
   },
   "keywords": [],
