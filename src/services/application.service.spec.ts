@@ -1,15 +1,15 @@
-import 'reflect-metadata';
-import {ApplicationService} from './application.service';
+import 'reflect-metadata'
+import { ApplicationService } from './application.service'
 
-describe("Testing Application Service", ()=>{
+describe('Testing Application Service', () => {
     let applicationService: ApplicationService
-    beforeEach(()=> {
+    beforeEach(() => {
         applicationService = new ApplicationService()
     })
 
-    it("returns a message with hello world", () => {
+    it('returns a message with hello world', () => {
         const result = applicationService.sayHello()
-        expect(result).toBeDefined();
+        expect(result).toBeDefined()
         expect(result.message).toEqual('Hello, World!')
     })
 })
