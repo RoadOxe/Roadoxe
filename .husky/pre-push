@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+branch=$(git rev-parse --abbrev-ref HEAD)
+
+if ! echo "$branch" | grep -E "^(feat|fix|hotfix|chore)\/[A-Za-z0-9_-]+$" >/dev/null; then
+  echo "Error: Invalid branch name. Branch names must follow the convention: feat/..., fix/..., hotfix/... or chore/..."
+  exit 1
+fi
+
+exit 0

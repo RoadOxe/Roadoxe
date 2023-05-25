@@ -18,7 +18,8 @@
     "ts-node": "ts-node",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commitlint": "commitlint"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,7 @@
     "@types/node": "^20.2.3",
     "@typescript-eslint/eslint-plugin": "^5.59.7",
     "@typescript-eslint/parser": "^5.59.7",
+    "commitlint": "^17.6.3",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.0",
