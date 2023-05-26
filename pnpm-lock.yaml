@@ -19,6 +19,9 @@ dependencies:
   morgan:
     specifier: ^1.10.0
     version: 1.10.0
+  postgres:
+    specifier: ^3.3.4
+    version: 3.3.4
   reflect-metadata:
     specifier: ^0.1.13
     version: 0.1.13
@@ -45,6 +48,9 @@ devDependencies:
   commitlint:
     specifier: ^17.6.3
     version: 17.6.3
+  dotenv:
+    specifier: ^16.0.3
+    version: 16.0.3
   eslint:
     specifier: ^8.22.0
     version: 8.22.0
@@ -69,6 +75,9 @@ devDependencies:
   ts-jest:
     specifier: ^29.1.0
     version: 29.1.0(@babel/core@7.21.8)(jest@29.5.0)(typescript@5.0.4)
+  ts-node:
+    specifier: ^10.9.1
+    version: 10.9.1(@types/node@20.2.3)(typescript@5.0.4)
   typescript:
     specifier: ^5.0.4
     version: 5.0.4
@@ -1936,6 +1945,11 @@ packages:
       is-obj: 2.0.0
     dev: true
 
+  /dotenv@16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
+    dev: true
+
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
@@ -3800,6 +3814,10 @@ packages:
     dependencies:
       find-up: 4.1.0
     dev: true
+
+  /postgres@3.3.4:
+    resolution: {integrity: sha512-XVu0+d/Y56pl2lSaf0c7V19AhAEfpVrhID1IENWN8nf0xch6hFq6dAov5dtUX6ZD46wfr1TxvLhxLtV8WnNsOg==}
+    dev: false
 
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
