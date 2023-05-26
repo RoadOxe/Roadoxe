@@ -1,41 +1,83 @@
-# __Raodoxe__
+# Roadoxe
 
-Roadoxe is a project developed with TypeScript and Express.js. It includes a server setup using Inversify for dependency injection.
+Roadoxe is a project developed to practice good coding conventions and test-driven development (TDD). It is built with TypeScript and Express.js.
+
+## Prerequisites
+
+Make sure you have the following software installed:
+
+- Node.js >= 18.15.0
+- npm >= 9.6.1
+- pnpm >= 8.5.1
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository_url>
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd roadoxe
+```
+
+3. Install the dependencies using pnpm:
+
+```bash
+pnpm install
+```
+
 ## Usage
-To start the server, use the following command:
-- npm run start
 
-__The above will build the project using TypeScript and run the compiled code using Node.js.__
+To start the development server:
 
-### Scripts
+```bash
+pnpm run start:dev
+```
 
-To start the server, use the following command:
+To build the project:
 
-__To Install Dependencies please run__
-`pnpm install`
- -  __npm run build__: Builds the project by transpiling TypeScript code to JavaScript.
-  -  __npm run test__: Runs tests using Jest with code coverage
- -  __npm run lint__: Lints the project using ESLint.
-  -  __npm run format__: Formats the code using Prettie.
-   -  __npm run prepare__: Sets up the project hooks using Husky.
- -  __npm run commitlint__:Performs commit message linting.
- 
-## File Structure
-The main files and directories in the project are as follows:
+```bash
+pnpm run build
+```
 
-- __src__: Contains the source code of the project.
-- __adapters/express__: Includes Express.js related files.
-- __containers__: Contains the Inversify container setup.
-- __controllers__: Includes application controllers.
-- __services__: Contains application services.
-- __test__: Includes test files.
+To run the tests:
 
+```bash
+pnpm run test
+```
 
+## Coding Conventions
 
-***
-### `Important`
->  **Please note that I have updated the package.json dependencies and devDependencies sections to improve readability. Make sure to verify and adjust them if needed.**
+To maintain a consistent code style and ensure code quality, the following conventions are followed in this project:
 
-__Let me know if there's anything else I can assist you with!_
+- **Linting**: ESLint is used for linting the TypeScript code. You can run the linting checks using the following command:
 
+  ```bash
+  pnpm run lint
+  ```
 
+- **Formatting**: Prettier is used for code formatting. You can format the code using the following command:
+
+  ```bash
+  pnpm run format
+  ```
+
+- **Commit Messages**: The project enforces a commit message format using commitlint. Commit messages should follow the format: `<verb in imperative mood>: <what was done>`. Allowed verbs in imperative mood include `feat`, `fix`, `bump`, `chore`, `refactor`, `reformat`, `optimise`, `document`, `merge`. Example: `feat: add login button`.
+
+- **Git Hooks**: Husky is used to set up Git hooks for pre-commit and pre-push actions. These hooks ensure that the code is properly formatted, linted, and follows the commit message conventions before committing or pushing to the repository.
+
+## Coding Conventions
+
+To ensure consistency and maintainable code, we follow the coding conventions outlined below:
+
+...
+
+For detailed coding conventions, please refer to the [CODING_CONVENTIONS.md](CODING_CONVENTIONS.md) file.
+
+## License
+
+This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
