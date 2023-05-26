@@ -15,13 +15,13 @@ Make sure you have the following software installed:
 1. Clone the repository:
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/RoadOxe/Roadoxe.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd roadoxe
+cd Roadoxe
 ```
 
 3. Install the dependencies using pnpm:
@@ -35,19 +35,19 @@ pnpm install
 To start the development server:
 
 ```bash
-pnpm run start:dev
+pnpm start:dev
 ```
 
 To build the project:
 
 ```bash
-pnpm run build
+pnpm build
 ```
 
 To run the tests:
 
 ```bash
-pnpm run test
+pnpm test
 ```
 
 ## Coding Conventions
@@ -57,13 +57,13 @@ To maintain a consistent code style and ensure code quality, the following conve
 - **Linting**: ESLint is used for linting the TypeScript code. You can run the linting checks using the following command:
 
   ```bash
-  pnpm run lint
+  pnpm lint
   ```
 
 - **Formatting**: Prettier is used for code formatting. You can format the code using the following command:
 
   ```bash
-  pnpm run format
+  pnpm format
   ```
 
 - **Commit Messages**: The project enforces a commit message format using commitlint. Commit messages should follow the format: `<verb in imperative mood>: <what was done>`. Allowed verbs in imperative mood include `feat`, `fix`, `bump`, `chore`, `refactor`, `reformat`, `optimise`, `document`, `merge`. Example: `feat: add login button`.
