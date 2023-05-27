@@ -1,4 +1,3 @@
-import 'reflect-metadata'
 import { LoggerService } from './logger.service'
 
 describe('LoggerService', () => {

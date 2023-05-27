@@ -43,6 +43,4 @@ describe('setupExpressServer', () => {
                 expect(consoleLogSpy).toHaveBeenCalledWith('Mock logger middleware')
             })
     })
-
-    // Add more test cases as needed
 })
