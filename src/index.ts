@@ -1,4 +1,3 @@
-import 'reflect-metadata'
 import http from 'http'
 import { setupExpressServer } from './adapters/express'
 import { inversifyContainer } from './containers/inversify.container'

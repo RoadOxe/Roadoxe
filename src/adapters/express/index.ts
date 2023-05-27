@@ -3,6 +3,8 @@ import { inversifyContainer } from '../../containers/inversify.container'
 import express from 'express'
 import { LoggerService } from '../../services/logger.service'
 
+console.log(LoggerService)
+
 export function setupExpressServer(): express.Application {
     const loggerService = inversifyContainer.get<LoggerService>(LoggerService)
     const server = new InversifyExpressServer(inversifyContainer)
