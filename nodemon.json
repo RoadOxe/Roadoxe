@@ -4,5 +4,5 @@
   ],
   "ext": ".ts, .js",
   "ignore": [],
-  "exec": "pnpm ts-node -r dotenv/config ./src/index.ts"
+  "exec": "pnpm ts-node ./src/index.ts"
 }

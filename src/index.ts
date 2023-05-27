@@ -9,6 +9,8 @@ const expressApplication = setupExpressServer()
 const server = http.createServer(expressApplication)
 const loggerService = inversifyContainer.get<LoggerService>(LoggerService)
 
+loggerService.debug('Process', process.env)
+
 server.listen(process.env.PORT, () => {
     loggerService.logInfo('Server started at port 3000')
 })

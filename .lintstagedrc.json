@@ -1,7 +1,3 @@
 {
-  "*.{js,jsx,ts,tsx}": [
-    "pnpm format",
-    "pnpm lint --fix",
-    "jest --bail --findRelatedTests --passWithNoTests"
-  ]
+  "*.{js,jsx,ts,tsx}": ["pnpm format", "pnpm lint --fix", "jest --bail --findRelatedTests --passWithNoTests"]
 }

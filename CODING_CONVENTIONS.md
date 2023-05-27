@@ -22,7 +22,7 @@ In this project, we adhere to the following coding conventions to ensure consist
 
 - **Class Names**: Use Pascal case and start with an uppercase letter. Example: `UserService`, `DatabaseConnector`.
 
-- **Constants**: Use uppercase letters and separate words with underscores (_). Example: `MAX_ITEMS`, `API_KEY`.
+- **Constants**: Use uppercase letters and separate words with underscores (\_). Example: `MAX_ITEMS`, `API_KEY`.
 
 ## Indentation and Formatting
 
@@ -77,4 +77,3 @@ In this project, we adhere to the following coding conventions to ensure consist
 These coding conventions will help maintain a consistent codebase, improve readability, and make collaboration easier. By following these conventions, we aim to achieve a clean, maintainable, and reliable codebase.
 
 Please feel free to customize and expand upon these conventions to fit the specific needs of your project.
-

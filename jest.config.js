@@ -1,6 +1,7 @@
 /* eslint-disable */
-/** @type {import('ts-jest').JestConfigWithTsJest} */
+/** @type {import("ts-jest").JestConfigWithTsJest} */
 module.exports = {
   preset: 'ts-jest',
+  setupFiles: ['<rootDir>/test-env-setup.ts'],
   testEnvironment: 'node',
 }
