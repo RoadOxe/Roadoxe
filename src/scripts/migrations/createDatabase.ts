@@ -24,4 +24,4 @@ async function execute() {
     await Promise.all(operations)
 }
 
-await execute()
+execute()
