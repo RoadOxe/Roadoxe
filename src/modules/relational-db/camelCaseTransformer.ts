@@ -3,10 +3,11 @@
 import postgres from 'postgres'
 
 /**
+ * @deprecated only made public for testing. Do not use it directly.
  * source https://github.com/porsager/postgres/blob/6b49449eb72af704d7433b6d85ed46e3177b099f/src/types.js#L335-L343
  * it's almost an exact copy except for typescript types
  */
-function createJsonTransform(fn: (x: string) => string) {
+export function createJsonTransform(fn: (x: string) => string) {
     return function jsonTransform(x: any, column: postgres.Column<string>): any {
         return typeof x === 'object' && x !== null && (column.type === 114 || column.type === 3802)
             ? Array.isArray(x)
