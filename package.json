@@ -19,7 +19,7 @@
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "commitlint": "commitlint"
+    "lint-staged": "lint-staged"
   },
   "keywords": [],
   "author": "",
