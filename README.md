@@ -12,6 +12,9 @@ Make sure you have the following software installed:
 - pnpm >= 8.5.1
 - postgres >= 15.1
 
+** Please note this is mono-repo and we handle workspaces using nx and pnpm **
+** Running `pnpm install` in the root will install dependencies for all the apps and packages **
+
 ## Installation
 
 1. Clone the repository:
