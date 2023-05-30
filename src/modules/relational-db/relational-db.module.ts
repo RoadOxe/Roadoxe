@@ -4,7 +4,7 @@ import { createRelationalDbClient, RELATIONAL_DB_CLIENT } from './create-relatio
 
 export const DATABASE = process.env.DB_NAME || 'roadoxe'
 
-export const relationalDbModule = new ContainerModule((bind, _unbind) => {
+export const relationalDbModule = new ContainerModule((bind) => {
     // RelationalDb connection client
     bind<RelationalDbClient>(RELATIONAL_DB_CLIENT)
         .toDynamicValue(() => createRelationalDbClient(DATABASE))
