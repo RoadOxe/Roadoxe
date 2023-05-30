@@ -1,11 +1,12 @@
 import { Container } from 'inversify'
-import { ApplicationService } from '../services/application.service'
+import 'reflect-metadata'
+import { relationalDbModule } from '../modules/relational-db/relational-db.module'
 import { ApplicationController } from '../controllers/application.controller'
-import { LoggerService } from '../services/logger.service'
 
-const container = new Container()
-container.bind<ApplicationService>(ApplicationService).to(ApplicationService).inSingletonScope()
+const container = new Container({ autoBindInjectable: true, defaultScope: 'Singleton' })
 container.bind<ApplicationController>(ApplicationController).to(ApplicationController).inSingletonScope()
-container.bind<LoggerService>(LoggerService).toSelf()
+
+// Load Modules
+container.load(relationalDbModule)
 
 export const inversifyContainer = container

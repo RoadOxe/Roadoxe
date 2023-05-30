@@ -15,11 +15,11 @@
     "start": "pnpm run build && node build/index.js",
     "build": "rimraf ./build && tsc",
     "test": "jest --detectOpenHandles --coverage",
-    "ts-node": "ts-node",
+    "ts-node": "ts-node -r dotenv/config",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "commitlint": "commitlint"
+    "lint-staged": "lint-staged"
   },
   "keywords": [],
   "author": "",
@@ -29,9 +29,11 @@
     "@types/jest": "^29.5.1",
     "@types/morgan": "^1.9.4",
     "@types/node": "^20.2.3",
+    "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.59.7",
     "@typescript-eslint/parser": "^5.59.7",
     "commitlint": "^17.6.3",
+    "dotenv": "^16.0.3",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.0",
@@ -39,7 +41,9 @@
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.1",
+    "supertest": "^6.3.3",
     "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   },
   "dependencies": {
@@ -49,6 +53,7 @@
     "inversify": "^6.0.1",
     "inversify-express-utils": "^6.4.3",
     "morgan": "^1.10.0",
+    "postgres": "^3.3.4",
     "reflect-metadata": "^0.1.13"
   }
 }

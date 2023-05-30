@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "module": "commonjs",
     "lib": ["es6"],
     "outDir": "build",
@@ -12,6 +12,6 @@
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "types": ["reflect-metadata", "jest"]
+    "types": ["reflect-metadata", "jest", "node"]
   }
 }
