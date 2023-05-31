@@ -2,8 +2,13 @@
   "name": "Roadoxe",
   "version": "1.0.0",
   "description": "",
+  "packageManager": "pnpm@8.5.1",
+  "engines": {
+    "node": ">=18.15.0",
+    "npm": ">=9.6.1",
+    "pnpm": ">=8.5.1"
+  },
   "scripts": {
-    "preinstall": "command -v pnpm || (echo 'pnpm is required to install dependencies.' && exit 1)",
     "prepare": "husky install",
     "graph:affected": "nx affected:graph",
     "lint-staged": "npm exec -- nx affected --target=lint-staged",
