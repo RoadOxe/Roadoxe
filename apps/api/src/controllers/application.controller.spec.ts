@@ -3,7 +3,7 @@ import express, { Express } from 'express'
 import { Container } from 'inversify'
 import { InversifyExpressServer } from 'inversify-express-utils'
 import { ApplicationService } from '../services/application.service'
-import { ApplicationController } from '../controllers/application.controller'
+import { ApplicationController } from './application.controller'
 
 describe('ApplicationController', () => {
     let app: Express.Application

@@ -21,8 +21,8 @@ describe('createRelationalDbClient', () => {
         process.env.DB_HOST = 'localhost'
         process.env.DB_NAME = 'testdb'
 
-        const mockedPostgres = jest.fn();
-        (postgres as unknown as jest.Mock).mockImplementation(mockedPostgres)
+        const mockedPostgres = jest.fn()
+    ;(postgres as unknown as jest.Mock).mockImplementation(mockedPostgres)
 
         const database = 'testdb'
         const client: Sql = createRelationalDbClient(database)

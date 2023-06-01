@@ -3,3 +3,8 @@ build
 .idea
 coverage
 .env
+
+**/coverage
+**/build
+**/.env
+**/node_modules

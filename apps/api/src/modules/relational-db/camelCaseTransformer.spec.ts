@@ -11,7 +11,7 @@ describe('jsonTransform', () => {
             table: 1,
             number: 123,
             type: 114,
-        } 
+        }
 
         expect(transform(x, column)).toEqual({})
     })
@@ -66,4 +66,3 @@ describe('jsonTransform', () => {
         })
     })
 })
-
