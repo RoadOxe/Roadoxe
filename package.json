@@ -1,5 +1,5 @@
 {
-  "name": "Roadoxe",
+  "name": "roadoxe",
   "version": "1.0.0",
   "description": "",
   "packageManager": "pnpm@8.5.1",
@@ -14,9 +14,11 @@
     "lint-staged": "npm exec -- nx affected --target=lint-staged",
     "lint": "nx run-many --target=lint --all",
     "format": "nx run-many --target=format --all",
-    "build": "nx run-many --target=build --all",
+    "build": "nx run-many --target=build --all --exclude=roadoxe-go",
+    "build:all": "nx run-many --target=build --all",
     "start:dev": "nx start:dev api",
-    "test": "nx run-many --target=test --all"
+    "test": "nx run-many --target=test --all  --exclude=roadoxe-go",
+    "test:all": "nx run-many --target=test --all"
   },
   "devDependencies": {
     "husky": "^8.0.0",
