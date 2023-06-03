@@ -34,7 +34,7 @@ jobs:
 
       - name: Navigate to /apps/api-go/ and run go mod tidy
         run: |
-          cd /apps/api-go/
+          cd apps/api-go/
           go mod tidy
 
       - name: Return to root directory
