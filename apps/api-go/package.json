@@ -4,7 +4,7 @@
   "description": "Roadoxe project in go",
   "scripts": {
     "build": "go build -o=./build/ ./cmd/api",
-    "start": "go run ./cmd/api",
+    "start": "go run ./cmd/api/...",
     "test": "go test ./..."
   }
 }
