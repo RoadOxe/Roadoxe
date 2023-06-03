@@ -8,3 +8,24 @@ coverage
 **/build
 **/.env
 **/node_modules
+
+# Go specific
+**/*.exe
+**/*.dll
+**/*.so
+**/*.dylib
+
+# Compiled Object files, Static and Shared libraries (always ignore generated files)
+**/*.o
+**/*.a
+
+# Go build and test cache
+**/*.test
+**/*.prof
+
+# Go module cache
+**/go.sum
+**/go.mod
+
+# Dependency directories (remove if not using modules)
+**/vendor/
