@@ -11,6 +11,7 @@ fi
 if command -v go &>/dev/null; then
   pnpm build:all
 else
+  echo "[INFO]: Go is not installed skipping build of apps/api-go"
   pnpm build
 fi
 
