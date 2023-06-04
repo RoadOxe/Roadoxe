@@ -8,5 +8,5 @@ type AppConfig struct {
 	Env     string
 	Status  string
 	Version string
-	Logger  logger.Logger
+	Logger  *logger.Logger
 }

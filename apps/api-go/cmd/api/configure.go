@@ -15,6 +15,6 @@ func init() {
 		Env:     "development",
 		Status:  "Availabe",
 		Version: "1.0.0",
-		Logger:  appLogger,
+		Logger:  &appLogger,
 	}
 }
