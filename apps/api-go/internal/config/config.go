@@ -1,9 +1,12 @@
 package config
 
-import "log"
+import (
+	"roadoxe-be/internal/logger"
+)
 
 type AppConfig struct {
-	Env      string
-	InfoLog  *log.Logger
-	ErrorLog *log.Logger
+	Env     string
+	Status  string
+	Version string
+	Logger  *logger.Logger
 }

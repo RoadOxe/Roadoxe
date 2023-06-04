@@ -3,16 +3,12 @@ package main
 import (
 	"flag"
 	"fmt"
-	"log"
 	"net/http"
-	"os"
 	"roadoxe-be/internal/router"
 	"time"
 )
 
-const version = "1.0.0"
-
-type config struct {
+type configurations struct {
 	port int
 	env  string
 }
@@ -29,13 +25,11 @@ type AppStatus struct {
 // }
 
 func main() {
-	var cfg config
+	var cfg configurations
 
 	flag.IntVar(&cfg.port, "port", 4000, "server port to listen on")
 	flag.StringVar(&cfg.env, "env", "development", "Application enviourment (development|production)")
 	flag.Parse()
-
-	logger := log.New(os.Stdout, "", log.Ldate|log.Ltime)
 
 	// app := &application{
 	// 	config: cfg,
@@ -50,11 +44,11 @@ func main() {
 		WriteTimeout: 30 * time.Second,
 	}
 
-	logger.Println("Starting server at port", cfg.port)
+	appConfig.Logger.Info("Starting server at port", cfg.port)
 
 	err := srv.ListenAndServe()
 	if err != nil {
-		log.Println(err)
+		appConfig.Logger.Error(err)
 	}
 
 }
