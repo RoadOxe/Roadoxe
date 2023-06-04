@@ -44,7 +44,7 @@ func main() {
 		WriteTimeout: 30 * time.Second,
 	}
 
-	appConfig.Logger.Info("Starting server at port", cfg.port)
+	appConfig.Logger.Info("Starting server at port ", cfg.port)
 
 	err := srv.ListenAndServe()
 	if err != nil {
