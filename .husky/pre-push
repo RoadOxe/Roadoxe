@@ -8,6 +8,11 @@ if ! echo "$branch" | grep -E "^(feat|fix|hotfix|chore)\/[A-Za-z0-9_-]+$" >/dev/
   exit 1
 fi
 
-pnpm build
+if command -v go &>/dev/null; then
+  pnpm build:all
+else
+  echo "[INFO]: Go is not installed skipping build of apps/api-go"
+  pnpm build
+fi
 
 exit 0

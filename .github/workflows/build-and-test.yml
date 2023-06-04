@@ -21,17 +21,30 @@ jobs:
         with:
           node-version: '18.15.0'
 
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.19.2
+
       - name: Install pnpm
         run: npm i --global pnpm@latest
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Navigate to /apps/api-go/ and run go mod tidy
+        run: |
+          cd apps/api-go/
+          go mod tidy
+
+      - name: Return to root directory
+        run: cd ../..
+
       - name: Build
-        run: pnpm build
+        run: pnpm build:all
 
       - name: Lint
         run: pnpm lint
 
       - name: Run tests
-        run: pnpm test
+        run: pnpm test:all

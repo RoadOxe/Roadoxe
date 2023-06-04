@@ -1,0 +1,11 @@
+{
+  "name": "roadoxe-go",
+  "version": "1.0.0",
+  "description": "Roadoxe project in go",
+  "scripts": {
+    "build": "go build -o=./build/ ./cmd/api",
+    "start": "go run ./cmd/api/...",
+    "format": "go fmt ./...",
+    "test": "go test ./..."
+  }
+}
