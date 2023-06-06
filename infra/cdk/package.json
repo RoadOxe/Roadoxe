@@ -8,7 +8,8 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "deploy":"cdk deploy --profile roadoxe"
   },
   "devDependencies": {
     "@types/jest": "^29.2.5",
