@@ -17,7 +17,7 @@
     "build": "nx run-many --target=build --all",
     "start:dev": "nx start:dev api",
     "test": "nx run-many --target=test --all",
-    "start:deploy": "nx run-many --target=deploy --all"
+    "deploy": "nx run-many --target=deploy --all"
   },
   "devDependencies": {
     "husky": "^8.0.0",
