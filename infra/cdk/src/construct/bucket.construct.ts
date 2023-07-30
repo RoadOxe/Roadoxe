@@ -33,28 +33,3 @@ export class CustomBucket extends Bucket {
   }
 
 }
-
-export class S3Construct extends Construct {
-  public s3Bucket: Bucket;
-
-  constructor({
-    scope,
-    id,
-    bucketName,
-  }: {
-    scope: Construct;
-    id: string;
-    props?: StackProps;
-    bucketName: string;
-  }) {
-    super(scope, id);
-
-    const bucket = new Bucket(this, `${id}-bucket`, {
-      bucketName,
-      removalPolicy: RemovalPolicy.DESTROY,
-    });
-
-    this.s3Bucket = bucket;
-  }
-}
-
