@@ -10,3 +10,5 @@ pnpm-lock.yaml
 **/build
 **/.env
 **/node_modules
+
+**/pnpm-lock.yaml
