@@ -16,6 +16,7 @@
     "test": "jest --detectOpenHandles --coverage",
     "ts-node": "ts-node -r dotenv/config",
     "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write .",
     "lint-staged": "lint-staged"
   },

@@ -3,8 +3,10 @@ build
 .idea
 coverage
 .env
+pnpm-lock.yaml
 
 **/coverage
+**/pnpm-lock.yaml
 **/build
 **/.env
 **/node_modules
